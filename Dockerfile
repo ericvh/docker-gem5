@@ -11,4 +11,4 @@ WORKDIR /usr/local/src
 RUN hg clone http://repo.gem5.org/gem5
 # build it
 WORKDIR /usr/local/src/gem5
-scons --ignore-style build/ARM/gem5.opt
+RUN scons --ignore-style build/ARM/gem5.opt
