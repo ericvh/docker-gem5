@@ -12,3 +12,6 @@ RUN hg clone http://repo.gem5.org/gem5
 # build it
 WORKDIR /usr/local/src/gem5
 RUN scons --ignore-style build/ARM/gem5.opt
+# clean up build directory to save 2GB
+RUN mv build/ARM/gem5.opt /usr/local/bin
+RUN rm -rf build
