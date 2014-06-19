@@ -15,3 +15,6 @@ RUN scons --ignore-style build/ARM/gem5.opt
 # clean up build directory to save 2GB
 RUN mv build/ARM/gem5.opt /usr/local/bin
 RUN rm -rf build
+# recreate build directory and link /usr/local/bin/gem5.opt to create a bit of confusion
+RUN mkdir -p build/ARM
+RUN ln -s /usr/local/bin/gem5.opt build/ARM/gem5.opt
