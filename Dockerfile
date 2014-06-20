@@ -13,4 +13,4 @@ RUN hg clone http://repo.gem5.org/gem5
 WORKDIR /usr/local/src/gem5
 ADD build.bash /usr/local/src/gem5/build.bash
 RUN chmod ugo+x build.bash
-RUN build.bash
+RUN ./build.bash
