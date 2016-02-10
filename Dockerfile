@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:15.10
 MAINTAINER Eric Van Hensbergen <ericvh@gmail.com>
 
 # get dependencies
