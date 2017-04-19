@@ -1,4 +1,4 @@
-FROM ubuntu:15.10
+FROM ubuntu:17.04
 MAINTAINER Eric Van Hensbergen <ericvh@gmail.com>
 
 # get dependencies
@@ -14,3 +14,4 @@ WORKDIR /usr/local/src/gem5
 ADD build.bash /usr/local/src/gem5/build.bash
 RUN chmod ugo+x build.bash
 RUN ./build.bash
+ENTRYPOINT bash
