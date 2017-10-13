@@ -1,4 +1,4 @@
-FROM ubuntu:17.04
+FROM ubuntu:latest
 MAINTAINER Eric Van Hensbergen <ericvh@gmail.com>
 
 # get dependencies
